@@ -21,8 +21,8 @@
 		<center>
 		<p  align="justify">Esta página é destinada a apresentação de trabalhos realizado na disciplina de Processamento Digital de 			Imagens, cursada na Universidade Federal do Rio Grande do Norte (UFRN), ministrada pelo professor Agostinho de Medeiros Brito 			Junior, onde a disciplina é coordenada pelo departamento de Engenharia da Computação.</p><hr/>
 		</center>
-		<h3><b>3. Manipulando pixels em uma imagem</h4>
-		<h3><b>3a. Negativa de uma região da imagem</h3>
+		<h3><b>3. Manipulando pixels em uma imagem</h3>
+		<h3><b>3.2a Negativa de uma região da imagem</h3>
 		<p>O exercício desenvolvido mostra a implementação do algoritmo regions.cpp, onde o mesmo solicita ao usuário a inserção de 			pontos iniciais e finais em coordenadas x e y, onde com esses valores é gerado um negativo na imagem desejada. </p>
 		<p>Com os valores conhecidos o algoritmo calcualar o inverso da imagem e mostra a imagem com a área desejada em negativo, para 			o exemplo foram usadas as coordenadas iniciais 10 para X e 70 para Y, as coordenadas finais foram 170 para X e 110 Y. Abaixo 			segue o código e a imagem resultado.</p>
 
@@ -32,10 +32,48 @@
 		<img src="img3.png"/>
 	
 		
-		<h3><b>3b. Troca de Regiões</h3>
+		<h3><b>3.2b Troca de Regiões</h3>
 		<P>O exercicio solicita que devemos fazer a troca de posiçoes das regiões da foto, assim o algoritmo randomiza a altura e 			largura e assim separa as regiões. Segue abaixo o código e o resultado obtido.<hr/>
 
+		<h5>Código</h5>
+		<img src="imx3.png"/>
+		<img src="imv3.png"/>
+		<h5>Foto Original</h5>
+		<img src="im.png"/>
+		<h5>Resultado:</h5>
+		<img src="invertida.png"/><hr/>
+		
+		<h3><b>4. Preenchendo regiões</h3>
+		<h3><b>4.2a Preenchendo regiões</h3>
+		<p>A representação das imagem variam entre 0 a 255, com isso para representar imagens com mas de 255 elementos ficar 			impossivel pois não vai ocorre mas niveis disponiveis para executar a rotulação. Uma possivel solução será altera o algoritmo 			floodFill onde ele vai identificar o número de niveis disponiveis.		
+		<h3><b>4.2b Identificação</h3>
+		<p>Usando o algoritmo apresentado conseguimos gera o resultado desejado no exercicio, abaixo esta o código comentado e o 			resultado obtido, onde no resultado os locais em preto significa os locais onde as bolhas tinham buracos.
+		<h5>Código</h5>
+		<img src="q4.png"/>
+		<img src="q41.png"/>
+		<img src="q42.png"/>
+		<img src="q44.png"/>
+		<h5>Resultado:</h5>
+		<img src="labeling.png"/><hr/>		
 
+
+		<h3><b>5. Manipulação de Histograma</h3>
+		<h3><b>5.2a Equalização de HIstograma</h3>
+		<p>Para realização da atividade submetida desenvolvemos o algoritmo equalize.cpp, usando como base o conhecimentos do algoritmo.cpp descrito no tutorial, para captura da imagem foi utilizada uma webcam simples, presente em qualquer computador pessoal. Na imagem abaixo vai ser demostrado o nosso código onde mostra a realização do cálculo do histrogama da imagem original feito pela função calcHist() onde ele recebe alguns argumentos, depois do calculo do histograma e feita a equalização através da função equalizeHist(), onde é contem dois parâmetro onde o primeiro significa a matriz da imagem original e o segundo representa a imagem equalizada.</p>
+		<p>Segue abaixo o algoritmo equalize.cpp e os resultados.</p>
+		<h5>Código</h5>
+		<img src="a5.png"/>
+		<img src="t51.png"/>
+		<img src="t52.png"/>
+		<img src="t57.png"/>
+		<h5>Resultado:</h5>
+		<h5>Original</h5>
+		<img src="out1.png"/>
+		<h5>Equalizada</h5>
+		<img src="out2.png"/><hr/>
+		
+<h3><b>6. Filtragem no domínio espacial I</h3>
+	
 	
 	</div>
 </body>
